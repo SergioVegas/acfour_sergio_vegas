@@ -39,8 +39,7 @@ namespace acfour_sergio_vegas
             }
         }
         public static int GestioError( int userNumb)
-        {
-            int userNumb = 0;
+        { 
             try { userNumb = int.Parse(Console.ReadLine()); }
             catch (FormatException) { Console.WriteLine("Dades introduides incorrectes"); }
 
