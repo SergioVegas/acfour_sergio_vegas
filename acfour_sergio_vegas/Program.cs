@@ -20,7 +20,26 @@ namespace acfour_sergio_vegas
             int[] arrayNumb = new int[sizeArray];
 
             CompleteArray( userNumb, sizeArray, arrayNumb);
+            BubbleSort( arrayNumb );
             WriteArray(arrayNumb);
+            
+        }
+        public static void BubbleSort(int[] arrayNumb)
+        {
+            for (int i = 0; i < arrayNumb.Length - 1; i++)
+            {
+                for (int j = i + 1; j < arrayNumb.Length; j++)
+                {
+                    if (arrayNumb[i] > arrayNumb[j])
+                    {
+                        int aux = arrayNumb[i];
+
+                        arrayNumb[i] = arrayNumb[j];
+
+                        arrayNumb[j] = aux;
+                    }
+                }
+            }
         }
         public static int[] CompleteArray(int userNumb, int sizeArray, int[] arrayNumb)
         {           
