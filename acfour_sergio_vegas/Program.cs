@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 
 namespace acfour_sergio_vegas
 {
@@ -47,3 +48,5 @@ namespace acfour_sergio_vegas
         }
     }
 }
+
+
